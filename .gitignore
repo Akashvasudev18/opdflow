@@ -1,0 +1,28 @@
+# Dependency directories
+node_modules/
+jspm_packages/
+venv/
+.venv/
+env/
+.env/
+
+# Next.js build output
+.next/
+out/
+
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Databases
+*.db
+*.sqlite3
+
+# Local env files
+.env*.local
+.env
+
+# OS Files
+.DS_Store
+Thumbs.db

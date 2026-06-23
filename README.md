@@ -57,6 +57,8 @@ cd opdflow
 
 ### 2. Backend Setup
 
+From the **project root directory**:
+
 ```bash
 cd backend
 
@@ -64,7 +66,7 @@ cd backend
 python -m venv venv
 
 # Activate virtual environment
-# Windows:
+# Windows (PowerShell/CMD):
 .\venv\Scripts\activate
 # macOS/Linux:
 source venv/bin/activate
@@ -74,6 +76,8 @@ pip install -r requirements.txt
 ```
 
 ### 3. Frontend Setup
+
+Navigate back to the **project root** (`cd ..`), then setup the frontend:
 
 ```bash
 cd frontend
@@ -86,17 +90,26 @@ npm install
 
 ## Running the Project
 
-### Start Backend Server
+Open two separate terminal windows starting from the **project root directory**.
+
+### Terminal 1: Start Backend Server
 
 ```bash
 cd backend
+
+# Activate virtual environment
+# Windows (PowerShell/CMD):
 .\venv\Scripts\activate
+# macOS/Linux:
+source venv/bin/activate
+
+# Start server
 python -m uvicorn app.main:app --host 127.0.0.1 --port 8000
 ```
 
 Backend will be running at: **http://127.0.0.1:8000**
 
-### Start Frontend Server
+### Terminal 2: Start Frontend Server
 
 ```bash
 cd frontend
